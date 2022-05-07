@@ -1,0 +1,110 @@
+.pfp {
+	padding: 20px;
+	margin-left: 50px;
+	width: 50%;
+	height: auto;
+	display: inline;
+	position: relative; left: 15%; top: 30%;
+
+}
+
+.welcome{
+	display: inline-block;
+	padding: 20px;
+	margin-right: 50px;
+	text-align: center;
+	width: 100%;
+	height: auto;
+	font-size: 175%;
+	border: 4mm ridge rgba(201,100,233,1);
+	position:relative; right:150px; top:130px;
+}
+
+h2{
+	display: block;
+	padding: 20px;
+	margin: 2%;
+	position: relative; top: 70px;
+}
+
+p {
+	display: block;
+	padding: 20px;
+	margin: 2%;
+	position: relative; top: 25px;
+}
+
+address a{
+  color: rgba(201,100,233,1);
+
+}
+
+address a[href^="mailto"]::before {
+    content: "📧 ";
+}
+
+address a[href^="tel"]::before {
+    content: "📞 ";
+}
+
+footer p {
+  display: inline-block;
+  border: 4px solid rgba(201,100,233,1);
+  padding: 5px;
+  margin: 0 auto;
+}
+
+label{
+  display:block;
+  padding: 10px;
+}
+
+.contactform {
+	text-align: center;
+	padding: 20px;
+}
+
+.carousel {
+	display: block;
+	width: 50%;
+	height: auto;
+	position: relative;left: 25%;
+	padding: 20px;
+}
+
+#resume {
+	display: block;
+	margin: 0 auto;
+	position: relative; left: 25%;
+}
+
+@media screen and (max-width: 1000px){
+	.pfp {
+		display: block;
+		text-align: center;
+		position: relative; right: 50%; top: 50%;
+		border-radius: 50%;
+	}
+
+	.welcome {
+		display: block;
+		text-align: center;
+		position: relative; right: 0%; top: 50%;
+		border: 2px solid rgba(255,255,255,0);
+		font-size: 100%;
+
+	}
+
+	h2 {
+		position: relative; top: 40px;
+	}
+
+	p {
+		position: relative; top: 10px;
+	}
+
+	#resume {
+		position: relative; left: 0%;
+		width: 100%;
+	}
+}
