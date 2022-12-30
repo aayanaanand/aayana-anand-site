@@ -1,50 +1,46 @@
-.pfp {
-	padding: 20px;
-	margin-left: 50px;
-	width: 50%;
-	height: auto;
-	display: inline;
-	position: relative; left: 15%; top: 30%;
-
+* {
+	box-sizing: border-box;
 }
 
-.welcome{
-	display: inline-block;
-	padding: 20px;
-	margin-right: 50px;
-	text-align: center;
-	width: 100%;
-	height: auto;
-	font-size: 175%;
-	border: 4mm ridge rgba(201,100,233,1);
-	position:relative; right:150px; top:130px;
+a:hover {
+	color: rgba(201,100,233,0.5);
 }
 
-h2{
+h2 {
+	text-decoration: underline;
+	color: rgba(229,159,255);
+}
+
+#hp {
+	text-decoration: underline;
+	color: white;
+}
+
+h2, h3{
 	display: block;
 	padding: 20px;
 	margin: 2%;
-	position: relative; top: 70px;
+	position: relative; top: 40px;
 }
 
 p {
 	display: block;
 	padding: 20px;
 	margin: 2%;
-	position: relative; top: 25px;
+	position: relative; top: 10px;
+	text-align: center;
 }
 
-address a{
-  color: rgba(201,100,233,1);
-
+#key {
+	text-align: left;
 }
 
-address a[href^="mailto"]::before {
-    content: "📧 ";
-}
-
-address a[href^="tel"]::before {
-    content: "📞 ";
+#contact {
+	display: block;
+	padding: 20px;
+	margin: 2%;
+	position: relative; top: 10px;
+	text-align: center;
 }
 
 footer p {
@@ -54,46 +50,72 @@ footer p {
   margin: 0 auto;
 }
 
-label{
-  display:block;
-  padding: 10px;
-}
-
-.contactform {
-	text-align: center;
-	padding: 20px;
-}
-
 .carousel {
 	display: block;
 	width: 50%;
 	height: auto;
 	position: relative;left: 25%;
+	padding: 40px;
+}
+
+#hero{
+	width: 100%;
+	height: 100vh;
+	background: linear-gradient(rgba(0,0,0,0.455), rgba(0,0,0,0.411)), url(../lawquad.jpeg) no-repeat center / cover;
+	color: white;
+	transition-duration: 0.5s;
+}
+
+.img-fluid {
+	height: 75%;
+	width: auto;
+	position: relative; top: 10%;
+}
+
+.container{
+	width: 90%;
+	height: 100%;
+	max-width: 1200px;
+	display: flex;
+	align: center;
+	justify-content: center;
+	text-align: center;
+	verticle-align: middle;
+}
+
+.container .info h1 {
+	font-size: 450%;
+	margin-bottom: 1rem;
+	display: flex;
+	align: center;
+	justify-content: center;
+	margin-top: 10rem;
+
+}
+
+.container .info h2 {
+	font-size: 350%;
+	margin-bottom: 2rem;
+
+
+}
+
+.container .info p {
+	font-size: 125%;
+	max-width: 60%;
+	margin: 0 auto;
+
+}
+
+.col-6 {
 	padding: 20px;
 }
 
-#resume {
-	display: block;
-	margin: 0 auto;
-	position: relative; left: 25%;
+.subheads {
+	text-align: center;
 }
 
-@media screen and (max-width: 1000px){
-	.pfp {
-		display: block;
-		text-align: center;
-		position: relative; right: 50%; top: 50%;
-		border-radius: 50%;
-	}
-
-	.welcome {
-		display: block;
-		text-align: center;
-		position: relative; right: 0%; top: 50%;
-		border: 2px solid rgba(255,255,255,0);
-		font-size: 100%;
-
-	}
+@media screen and (max-width: 400px){
 
 	h2 {
 		position: relative; top: 40px;
@@ -103,8 +125,42 @@ label{
 		position: relative; top: 10px;
 	}
 
-	#resume {
-		position: relative; left: 0%;
-		width: 100%;
+	.img-fluid {
+		display: none;
+	}
+
+	.description {
+		margin-left: auto;
+	    margin-right: auto;
+	    width: 30em
+	}
+
+	#lawquad {
+		display: none;
+	}
+}
+
+@media screen and (max-width: 950px){
+
+	h2 {
+		position: relative; top: 40px;
+	}
+
+	p {
+		position: relative; top: 10px;
+	}
+
+	.img-fluid {
+		display: none;
+	}
+
+	.description {
+		margin-left: auto;
+	    margin-right: auto;
+	    width: 30em
+	}
+
+	#lawquad {
+		display: none;
 	}
 }
